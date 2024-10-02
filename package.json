@@ -2,7 +2,7 @@
   "name": "memo-light",
   "displayName": "Memo Light",
   "description": "Memo Light",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "MitukiFukushima",
   "engines": {
     "vscode": "^1.90.0"
