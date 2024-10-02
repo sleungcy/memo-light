@@ -4,4 +4,4 @@ vscode side panels memo
 
 # Example
 
-![alt text](./assets/image.png)
+![alt text](https://github.com/mituki-nun/memo-light/blob/master/readme-assets/image.png)
