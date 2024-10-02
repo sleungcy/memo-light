@@ -1,0 +1,44 @@
+{
+  "name": "memo-light",
+  "displayName": "Memo Light",
+  "description": "Memo Light",
+  "version": "0.0.2",
+  "publisher": "MitukiFukushima",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [],
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "test.memo",
+          "name": "Memo Light",
+          "icon": "./assets/text-box-edit-outline.svg"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^18.19.53",
+    "@types/vscode": "^1.90.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  }
+}
