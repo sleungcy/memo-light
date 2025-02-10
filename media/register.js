@@ -1,9 +1,13 @@
 /// <reference lib="dom"/>
 const vscode = acquireVsCodeApi();
-const previousState = vscode.getState();
+var previousState = vscode.getState();
+
+if (previousState == null){
+  previousState = {text: ""};
+
+}
 
 const resizeObserver = new ResizeObserver((entries) => {
-  console.log(entries);
   vscode.setState({ text: textArea.value });
 });
 
